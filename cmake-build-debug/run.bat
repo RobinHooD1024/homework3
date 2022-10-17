@@ -1,0 +1,2 @@
+check_value.exe
+pause
