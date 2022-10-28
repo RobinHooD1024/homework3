@@ -12,3 +12,8 @@
 4	393	6886227228623097	CMakeFiles/check_value.dir/check_value.cpp.obj	e674690180dc06e0
 6	445	6886227229143098	CMakeFiles/check_value.dir/high_scores.cpp.obj	f4c931c5bdd066c
 445	641	6886227230800538	check_value.exe	e605613540910b
+0	10	0	clean	b36a22149ba2b4e1
+1	206	6886228418763147	CMakeFiles/check_value.dir/random_value.cpp.obj	169c306e125256d4
+4	396	6886228420675634	CMakeFiles/check_value.dir/check_value.cpp.obj	e674690180dc06e0
+7	461	6886228421320732	CMakeFiles/check_value.dir/high_scores.cpp.obj	f4c931c5bdd066c
+462	640	6886228422837384	check_value.exe	e605613540910b

@@ -1,6 +1,0 @@
-He 2
-jj 3
-kk 5
-La 4
-Sor 6
-Andrey 3
