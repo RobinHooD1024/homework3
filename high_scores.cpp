@@ -38,8 +38,13 @@ void print_hs() {
         }
 
         // Print the information to the screen
-        std::cout << username << '\t' << high_score << std::endl;
+//        std::cout << username << '\t' << high_score << std::endl;
+
     }
+    for (auto x : best_scores) {
+      cout << x.first << " " << x.second << endl;
+    }
+
 }
 
 void save_and_print_hs(string name, int attempts) {
@@ -61,7 +66,4 @@ void save_and_print_hs(string name, int attempts) {
 	} // end of score here just to mark end of the logic block of code
 
 	// Read the high score file and print all results
-	{
-        print_hs();
-	}
 }

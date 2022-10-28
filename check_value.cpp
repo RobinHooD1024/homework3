@@ -48,6 +48,7 @@ int main(int argc, char** argv) {
 		}
 
 	} while (not_win);
+        print_hs();
 
 	return 0;
 }
