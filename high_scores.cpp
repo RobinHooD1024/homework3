@@ -2,11 +2,13 @@
 #include <fstream>
 #include <string>
 #include "high_scores.h"
+#include <map>
 
 const std::string high_scores_filename = "high_scores.txt";
 
 void print_hs() {
     std::ifstream in_file{high_scores_filename};
+    map <string, int> best_scores;
     if (!in_file.is_open()) {
         std::cout << "Failed to open file for read: " << high_scores_filename << "!" << std::endl;
     }
@@ -20,8 +22,16 @@ void print_hs() {
         in_file >> username;
         // Read the high score next
         in_file >> high_score;
+        if (best_scores.count(username) == 0) {
+            best_scores.insert({username, high_score});
+        } else {
+            if (best_scores.at(username) > high_score) {
+                best_scores.at(username) = high_score;
+            }
+        }
         // Ignore the end of line symbol
         in_file.ignore();
+//        scores.insert(std::pair(username, high_score));
 
         if (in_file.fail()) {
             break;
@@ -52,9 +62,6 @@ void save_and_print_hs(string name, int attempts) {
 
 	// Read the high score file and print all results
 	{
-
-
         print_hs();
-
 	}
 }

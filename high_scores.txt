@@ -1,6 +1,6 @@
-S 10
-D 1
-A 1
-C 42
-A 1
-B 2
+He 2
+jj 3
+kk 5
+La 4
+Sor 6
+Andrey 3
